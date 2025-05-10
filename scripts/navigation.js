@@ -15,13 +15,14 @@ links.forEach(link => {
   });
 });
 
-// hamburger.js
+
 
 document.addEventListener("DOMContentLoaded", () => {
-  const toggle = document.querySelector("#menu-toggle");
-  const navLinks = document.querySelector("#nav-links");
+  const menuButton = document.getElementById("menu-toggle");
+  const navLinks = document.getElementById("nav-links");
 
-  toggle.addEventListener("click", () => {
-    navLinks.style.display = navLinks.style.display === "flex" ? "none" : "flex";
+
+  menuButton.addEventListener("click", () => {
+    navLinks.classList.toggle("hidden");
   });
 });

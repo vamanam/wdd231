@@ -1,44 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="author" content="Victoria Anthony Amanam" />
-  <meta name="description" content="WDD231 Course Home Page for Victoria Anthony Amanam" />
-  <title>Victoria A. Amanam - WDD231</title>
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Victoria  A. Anthony | Home</title>
+  <link rel="stylesheet" href="styles/large.css"/>
   <link rel="stylesheet" href="styles/normalize.css" />
   <link rel="stylesheet" href="styles/small.css" />
-  <link rel="stylesheet" href="styles/larger.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet" />
-
-  <script src="scripts/navigation.js" defer></script>
-  <script src="scripts/date.js" defer></script>
+  
   <script src="scripts/course.js" defer></script>
-  <script src="scripts/hamburger.js"></script>
+  <script src="scripts/date.js" defer></script>
+  <script src="scripts/navigation.js" defer></script>
 </head>
 <body>
   <header>
-    <img src="images/profile.jpg" alt="Victoria Amanam" />
-    <span>Victoria Anthony Amanam</span>
+      <header class="main-header">
+    <img src="images/profile.jpg" alt="Victoria A. Amanam" class="profile-img" />
+    <h1>Victoria A. Amanam</h1>
   </header>
-
-  <nav>
-    <button id="menu-toggle">&#9776;</button>
-    <button id="menu-toggle" aria-label="Toggle navigation menu">☰</button>
-    <ul id="nav-links">
+  <nav class="main-nav">
+    <button id="menu-toggle" aria-label="Toggle Menu">☰</button>
+    <ul id="nav-links"> 
       <li><a href="#" class="active">Home</a></li>
-      <li><a href="chamber/">Chamber</a></li>
-      <li><a href="final/">Final</a></li>
-      <li><a href="https://github.com/yourusername" target="_blank">GitHub Profile</a></li>
-      <li><a href="https://www.linkedin.com/in/yourprofile/" target="_blank">LinkedIn</a></li>
+      <li><a href="#">Chamber</a></li>
+      <li><a href="#">Final</a></li>
+      <li><a href="https://github.com/vamanam" target="_blank">GitHub Profile</a></li>
+      <li><a href="https://linkedin.com/in/victoria-amanam-dev" target="_blank">LinkedIn</a></li>
     </ul>
   </nav>
-
   <main>
-    <main>
-      <h1>Home</h1>
-    
+    <h1>Home</h1>
       <div class="card-container">
         <section class="card">
           <h2>Course Work</h2>
@@ -56,28 +47,29 @@
         </section>
       </div>
        
-    <section>
-      <main>
-        <div class="certificate-container">
+    <section class="certificate-container">
           <h2>Web and Computer Programming Certificate</h2>
-      
           <div class="filters">
             <button id="filter-all">All</button>
             <button id="filter-cse">CSE</button>
             <button id="filter-wdd">WDD</button>
           </div>
-      
           <p>Total Credits: <span id="credit-count">0</span></p>
-      
           <div id="course-list" class="course-grid"></div>
         </div>
-      </main>
-      
-  </main>
+    </section>
 
+      </main>
   <footer>
-    <p>&copy; <span id="year"></span> Victoria A. Amanam | Nigeria</p>
+
+    <p>&copy; <span id="year"></span> &#127804; Victoria A. Amanam &#127804; | Nigeria</p>
     <p id="lastModified"></p>
+
+    
   </footer>
+
+  
 </body>
+
+
 </html>
