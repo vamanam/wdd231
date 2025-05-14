@@ -51,6 +51,8 @@ body {
   height: 60px;
   border-radius: 50%;
   margin-right: 1rem;
+  max-width: 100%;
+  height: auto;
 }
 
 .main-header h1 {
@@ -169,3 +171,121 @@ footer {
   text-align: center;
   padding: 1rem;
 }
+
+.certificate-section {
+  background-color: #f0fdf4;
+  padding: 20px;
+  text-align: center;
+  font-family: Arial, sans-serif;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.certificate-section.dark {
+  background-color: #1a1a1a;
+  color: #f0f0f0;
+}
+
+.certificate-section h2 {
+  background-color: #1f5c78;
+  color: white;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.filter-buttons {
+  margin: 20px 0;
+}
+
+.filter-btn {
+  background-color: black;
+  color: white;
+  border: none;
+  margin: 0 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f0f5f5;
+    }
+
+    .certificate-section {
+      text-align: center;
+      padding: 20px;
+    }
+
+    .certificate-section.dark {
+      background-color: #1a1a1a;
+      color: white;
+    }
+
+    .filter-buttons {
+      margin-bottom: 20px;
+    }
+
+    .filter-btn {
+      padding: 10px 20px;
+      margin: 5px;
+      background-color: black;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .course-grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 15px;
+      margin-bottom: 30px;
+    }
+
+    .course {
+      padding: 20px;
+      min-width: 100px;
+      background-color: #8b4513;
+      color: white;
+      border-radius: 8px;
+      font-weight: bold;
+      box-shadow: 2px 2px 5px #999;
+    }
+
+    .completed {
+      border: 2px solid #4caf50;
+      box-shadow: 0 0 10px #4caf50;
+    }
+
+    footer {
+      background-color: #003366;
+      color: white;
+      padding: 10px;
+    }
+
+    .flag {
+      width: 30px;
+      vertical-align: middle;
+    }
+
+    .dark .course {
+      background-color: #444;
+      color: white;
+    }
+
+    .dark footer {
+      background-color: #111;
+    }
+
+    #darkModeToggle {
+      margin: 10px;
+      padding: 5px 15px;
+      background-color: #333;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }

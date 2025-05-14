@@ -6,6 +6,9 @@
       padding: 1.5rem 2rem;
 
   }
+  nav ul {
+    flex-direction: column;
+  }
 
   nav {
     display: flex;
@@ -44,7 +47,7 @@
 .card-container {
   display: flex;
   gap: 1rem;
-  justify-content: center;
+  justify-content: space-around;
   flex-wrap: wrap;
   margin: 1rem auto;
   max-width: 1000px;
