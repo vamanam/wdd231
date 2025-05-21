@@ -3,11 +3,24 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Open Graph meta tags for Facebook -->
+  <meta property="og:title" content="Victoria Amanam | Web Frontend Development Student">
+  <meta property="og:description" content="Explore my course projects, learn about web development, and see what I’m building as part of my BYU–Idaho WDD 231 coursework.">
+  <meta property="og:image" content="https://vamanam.github.io/wdd231/images/social-preview.png">
+  <meta property="og:url" content="https://vamanam.github.io/wdd231/">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Victoria A. Amanam Portfolio">
+  <!-- Twitter Card meta tags -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Victoria Amanam | Web Frontend Developer in Training">
+  <meta name="twitter:description" content="Come see my BYU |Idaho frontend development projects and discover what I'm building as I grow as a developer.">
+  <meta name="twitter:image" content="https://vamanam.github.io/wdd231/images/social-preview.png">
+
   <title>Victoria  A. Anthony | Home</title>
   <link rel="stylesheet" href="styles/large.css"/>
   <link rel="stylesheet" href="styles/normalize.css" />
   <link rel="stylesheet" href="styles/small.css" />
-  
   <script src="scripts/course.js" defer></script>
   <script src="scripts/date.js" defer></script>
   <script src="scripts/navigation.js" defer></script>
@@ -54,12 +67,23 @@
     <button class="filter-btn" data-filter="all">All</button>
     <button class="filter-btn" data-filter="cse">CSE</button>
     <button class="filter-btn" data-filter="wdd">WDD</button>
-    </div>
+    <button class="filter-btn" data-filter="completed">Completed</button>
+ </div>
+     <p id="creditTotal"><strong>Total Completed Credits:</strong> <span id="creditCount">0</span></p>
 
     <div class="course-grid" id="courseGrid"></div>
-   
+    <button id="darkModeToggle">Toggle Dark Mode</button>
+    <div class="legend">
+      <p>
+       <span title="Basic Course (1–2 credits)">✅</span> Basic |
+       <span title="Advanced Course (3+ credits)">🌟</span> Advanced
+      </p>
+    </div>
 
-      </main>
+ </div>
+
+   
+  </main>
   <footer>
 
     <p>&copy; <span id="year"></span> &#127804; Victoria A. Amanam &#127804; | Nigeria</p>
