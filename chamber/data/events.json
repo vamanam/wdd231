@@ -1,0 +1,24 @@
+{
+  "events": [
+    {
+      "date": "2025-06-01",
+      "title": "Farmers Market at Central Square",
+      "image": "images/farmers-market.webp"
+    },
+    {
+      "date": "2025-06-05",
+      "title": "Chamber Monthly Meeting",
+      "image": "images/meeting.webp"
+    },
+    {
+      "date": "2025-06-10",
+      "title": "Community Cleanup Day",
+      "image": "images/cleanup.webp"
+    },
+    {
+      "date": "2025-06-15",
+      "title": "Local Artisan Fair",
+      "image": "images/artisan-fair.webp"
+    }
+  ]
+}

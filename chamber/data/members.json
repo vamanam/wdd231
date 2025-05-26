@@ -62,6 +62,37 @@
       "image": "kora.jpg",
       "membership": 2,
       "description": "Handcrafted decor and musical instruments."
+    },
+      {
+  "members": [
+    {
+      "name": "GoldTech Solutions",
+      "image": "images/goldtech.png",
+      "phone": "555-123-4567",
+      "address": "123 Gold Street",
+      "website": "https://goldtech.com",
+      "membershipLevel": "Gold"
+    },
+    {
+      "name": "SilverWave Marketing",
+      "image": "images/silverwave.png",
+      "phone": "555-234-5678",
+      "address": "456 Silver Road",
+      "website": "https://silverwave.com",
+      "membershipLevel": "Silver"
+    },
+    {
+      "name": "Bronze Base Ltd.",
+      "image": "images/bronzebase.png",
+      "phone": "555-345-6789",
+      "address": "789 Bronze Blvd",
+      "website": "https://bronzebase.com",
+      "membershipLevel": "Bronze"
     }
   ]
 }
+
+  ]
+  
+}
+

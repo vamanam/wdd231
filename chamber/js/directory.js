@@ -14,6 +14,18 @@ document.addEventListener("DOMContentLoaded", () => {
       console.error("Error loading member data:", error);
     }
   }
+  // Fetch spotlight members
+  fetch("data/members.json")
+    .then((response) => response.json())
+    .then((data) => {
+      const goldSilver = data.members.filter(
+        m => m.membershipLevel === 2 || m.membershipLevel === 3
+      );
+
+      const selected = goldSilver.sort(() => 0.5 - Math.random()).slice(0, 3);
+      displayMembers(selected);
+    })
+    .catch((error) => console.error("Error fetching members:", error));
 
   // Display members in the selected layout
 let allMembers = [];
