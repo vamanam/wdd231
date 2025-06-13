@@ -20,7 +20,7 @@ body {
   color: var(--primary-color);
 }
 
-header{
+header {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -67,7 +67,8 @@ nav {
   border: none;
   font-size: 2rem;
   color: white;
-  display: none; /* Show only on small screens */
+  display: none;
+  /* Show only on small screens */
 }
 
 #dark-mode-toggle {
@@ -115,7 +116,7 @@ nav {
   padding: 12px 24px;
   font-weight: bold;
   border: none;
- text-decoration: none;
+  text-decoration: none;
 }
 
 main {
@@ -239,10 +240,14 @@ footer {
 }
 
 @media screen and (max-width: 600px) {
-  header, nav, .logo {
+
+  header,
+  nav,
+  .logo {
     flex-direction: column;
     align-items: flex-start;
   }
+
   .nav-links {
     flex-direction: column;
     gap: 0.5rem;
@@ -309,6 +314,7 @@ footer {
   gap: 1rem;
   flex-wrap: wrap;
 }
+
 .spotlight-card {
   background: #fff;
   border: 1px solid #ccc;
@@ -316,6 +322,7 @@ footer {
   border-radius: 8px;
   width: 30%;
 }
+
 .spotlight-card img {
   width: 100%;
   height: auto;
@@ -336,6 +343,7 @@ footer {
   text-align: center;
   flex: 1;
 }
+
 .forecast-card img {
   width: 50px;
   height: 50px;
@@ -369,104 +377,299 @@ footer {
   }
 }
 
-.events {
-  background-color: #f9f9f9;
-  padding: 1.5rem;
-  border-radius: 10px;
-  margin: 2rem 0;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+/* Main grid layouts become 2 columns */
+.events-grid,
+.spotlight-grid {
+  grid-template-columns: repeat(2, 1fr);
 }
 
-.events h2 {
-  color: #004466;
-  margin-bottom: 1rem;
+/* Weather forecast grid for 3 days */
+.forecast-grid {
+  grid-template-columns: repeat(3, 1fr);
 }
 
-.events ul {
+/* Spotlight Section */
+.spotlight-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: var(--gap-base);
+}
+
+.spotlight-card {
+  background-color: var(--light-bg);
+  padding: var(--gap-base);
+  border-radius: var(--border-radius);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.8rem;
+  border: 2px solid var(--primary-color);
+}
+
+.spotlight-card img {
+  max-width: 120px;
+  height: auto;
+  border-radius: var(--border-radius);
+  border: 1px solid #eee;
+}
+
+.spotlight-card h3 {
+  font-size: 1.5rem;
+  color: var(--primary-color);
+}
+
+.spotlight-card p {
+  font-size: 0.95rem;
+  color: var(--secondary-color);
+}
+
+.spotlight-card a {
+  color: var(--accent-color);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.cta-button {
+  display: inline-block;
+  background-color: var(--accent-color);
+  color: var(--light-text);
+  padding: 1rem 2rem;
+  text-decoration: none;
+  border-radius: var(--border-radius);
+  font-size: 1.2rem;
+  font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.cta-button:hover {
+  background-color: #218838;
+  transform: translateY(-2px);
+}
+
+/* Current Events Section */
+.events-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: var(--gap-base);
+}
+
+.event-card {
+  background-color: var(--light-bg);
+  padding: var(--gap-base);
+  border-radius: var(--border-radius);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.2s ease;
+}
+
+.event-card:hover {
+  transform: translateY(-5px);
+}
+
+.event-card h3 {
+  font-size: 1.4rem;
+  color: var(--primary-color);
+  margin-bottom: 0.5rem;
+}
+
+.event-card p {
+  font-size: 0.9rem;
+  color: var(--secondary-color);
+}
+
+/* Weather Section */
+#weather-section {
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap-base);
+}
+
+#current-weather {
+  text-align: center;
+  padding: var(--gap-base);
+  border: 1px solid #ddd;
+  border-radius: var(--border-radius);
+  background-color: #e9f5ff;
+  /* Light blue background */
+}
+
+#current-weather h3 {
+  font-size: 1.6rem;
+  margin-bottom: 0.5rem;
+}
+
+#current-weather p {
+  font-size: 1.1rem;
+  margin-bottom: 0.3rem;
+}
+
+.forecast-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: var(--gap-base);
+  text-align: center;
+}
+
+.forecast-day {
+  background-color: var(--light-bg);
+  padding: var(--gap-base);
+  border-radius: var(--border-radius);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+  border: 1px solid #eee;
+}
+
+.forecast-day p {
+  margin-bottom: 0.3rem;
+}
+
+.forecast-day strong {
+  color: var(--primary-color);
+}
+
+.forecast-day img {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 0.5rem;
+}
+
+.forecast-day span {
+  display: block;
+  font-size: 0.9rem;
+  color: var(--secondary-color);
+}
+
+.forecast-day .temp {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: var(--accent-color);
+}
+
+.forecast-day .condition {
+  font-size: 0.9rem;
+  color: var(--secondary-color);
+}
+
+.forecast-day .date {
+  font-size: 0.8rem;
+  color: var(--secondary-color);
+}
+
+.forecast-day .icon {
+  width: 40px;
+  height: 40px;
+  margin-bottom: 0.5rem;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 var(--padding-base);
+}
+
+nav {
+  flex-grow: 1;
+  /* Allow nav to take available space */
+  text-align: right;
+}
+
+nav ul {
   list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  gap: 1.5rem;
+  margin-top: 0;
+}
+
+nav ul li a {
+  color: var(--light-text);
+  text-decoration: none;
+  font-weight: 500;
+  padding: 0.5rem 0;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #d4d4d4;
+}
+
+/* Main Content Styles */
+main {
+  flex: 1;
+  /* Allows main to grow and take available space */
+  padding: var(--padding-base) 0;
+}
+
+section {
+  background-color: var(--light-text);
+  margin-bottom: var(--padding-base);
+  padding: var(--padding-base);
+  border-radius: var(--border-radius);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  color: var(--primary-color);
+  text-align: center;
+}
+
+/* Basic Resets & Variables */
+:root {
+  --primary-color: #007bff;
+  /* Example: Blue */
+  --secondary-color: #6c757d;
+  /* Example: Grey */
+  --accent-color: #28a745;
+  /* Example: Green */
+  --light-bg: #f8f9fa;
+  --dark-text: #343a40;
+  --light-text: #ffffff;
+  --border-radius: 8px;
+  --padding-base: 1.5rem;
+  --gap-base: 1rem;
+}
+
+* {
+  margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
-.events li {
-  background: #ffffff;
-  padding: 0.8rem;
-  margin-bottom: 0.6rem;
-  border-left: 5px solid #0077cc;
-  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
+body {
+  font-family: 'Inter', sans-serif;
+  line-height: 1.6;
+  color: var(--dark-text);
+  background-color: var(--light-bg);
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
-.events li {
+/* Container for content */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 var(--padding-base);
+}
+
+.card {
   opacity: 0;
-  transform: translateY(10px);
-  animation: fadeInUp 0.5s ease-in-out forwards;
+  transform: translateY(30px);
+  animation: fadeIn 1s ease forwards;
 }
 
-.events li:nth-child(1) { animation-delay: 0.1s; }
-.events li:nth-child(2) { animation-delay: 0.2s; }
-.events li:nth-child(3) { animation-delay: 0.3s; }
-/* Add more if you have more events */
-
-@keyframes fadeInUp {
+@keyframes fadeIn {
   to {
     opacity: 1;
     transform: translateY(0);
   }
-}
-
-.events li {
-  font-style: normal;
-}
-
-.events li:first-child:only-child {
-  font-style: italic;
-  color: #777;
-  border-left: none;
-  background: none;
-  box-shadow: none;
-}
-
-.carousel-container {
-  position: relative;
-  display: flex;
-  align-items: center;
-  overflow: hidden;
-  max-width: 100%;
-  padding: 1rem;
-}
-
-.carousel-track {
-  display: flex;
-  gap: 1rem;
-  overflow-x: auto;
-  scroll-behavior: smooth;
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.carousel-track li {
-  flex: 0 0 auto;
-  min-width: 250px;
-  background: #f8f8f8;
-  border-radius: 8px;
-  padding: 1rem;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-}
-
-.carousel-container button {
-  background: #333;
-  color: #fff;
-  border: none;
-  font-size: 1.5rem;
-  padding: 0.5rem 1rem;
-  cursor: pointer;
-  z-index: 1;
-}
-
-#prevBtn {
-  margin-right: 0.5rem;
-}
-
-#nextBtn {
-  margin-left: 0.5rem;
 }

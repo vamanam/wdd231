@@ -6,7 +6,7 @@
       "phone": "+223 555 0123",
       "url": "https://saharatextiles.com",
       "image": "sahara.jpg",
-      "membership": 3,
+      "membershipLevel": "Gold",
       "description": "High-quality fabrics and traditional attire."
     },
     {
@@ -15,7 +15,7 @@
       "phone": "+223 555 0456",
       "url": "https://deserttech.ml",
       "image": "deserttech.jpg",
-      "membership": 2,
+      "membershipLevel": "Silver",
       "description": "Tech consulting and digital infrastructure."
     },
     {
@@ -24,7 +24,7 @@
       "phone": "+223 555 0789",
       "url": "https://nomadcoffee.ml",
       "image": "nomadcoffee.jpg",
-      "membership": 1,
+      "membershipLevel": "Bronze",
       "description": "Locally sourced coffee with a nomadic touch."
     },
     {
@@ -33,7 +33,7 @@
       "phone": "+223 555 0321",
       "url": "https://timbuktutours.ml",
       "image": "tours.jpg",
-      "membership": 3,
+      "membershipLevel": "Gold",
       "description": "Guided heritage and desert tours."
     },
     {
@@ -42,7 +42,7 @@
       "phone": "+223 555 0654",
       "url": "https://savannagrocers.ml",
       "image": "savanna.jpg",
-      "membership": 2,
+      "membershipLevel": "Silver",
       "description": "Fresh produce and household essentials."
     },
     {
@@ -51,7 +51,7 @@
       "phone": "+223 555 0987",
       "url": "https://oasisspa.ml",
       "image": "oasis.jpg",
-      "membership": 1,
+      "membershipLevel": "Bronze",
       "description": "Peaceful spa treatments and holistic health."
     },
     {
@@ -60,39 +60,35 @@
       "phone": "+223 555 0147",
       "url": "https://koracrafts.ml",
       "image": "kora.jpg",
-      "membership": 2,
+      "membershipLevel": "Silver",
       "description": "Handcrafted decor and musical instruments."
     },
-      {
-  "members": [
     {
       "name": "GoldTech Solutions",
-      "image": "images/goldtech.png",
-      "phone": "555-123-4567",
       "address": "123 Gold Street",
-      "website": "https://goldtech.com",
-      "membershipLevel": "Gold"
+      "phone": "555-123-4567",
+      "url": "https://goldtech.com",
+      "image": "goldtech.png",
+      "membershipLevel": "Gold",
+      "description": "Premium IT solutions and enterprise services."
     },
     {
       "name": "SilverWave Marketing",
-      "image": "images/silverwave.png",
-      "phone": "555-234-5678",
       "address": "456 Silver Road",
-      "website": "https://silverwave.com",
-      "membershipLevel": "Silver"
+      "phone": "555-234-5678",
+      "url": "https://silverwave.com",
+      "image": "silverwave.png",
+      "membershipLevel": "Silver",
+      "description": "Creative marketing for a digital world."
     },
     {
       "name": "Bronze Base Ltd.",
-      "image": "images/bronzebase.png",
-      "phone": "555-345-6789",
       "address": "789 Bronze Blvd",
-      "website": "https://bronzebase.com",
-      "membershipLevel": "Bronze"
+      "phone": "555-345-6789",
+      "url": "https://bronzebase.com",
+      "image": "bronzebase.png",
+      "membershipLevel": "Bronze",
+      "description": "Startup support and strategic consulting."
     }
   ]
 }
-
-  ]
-  
-}
-

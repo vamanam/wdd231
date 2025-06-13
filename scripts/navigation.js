@@ -1,28 +1,16 @@
-
-const menuButton = document.getElementById('menu');
-const navigation = document.querySelector('.navigation');
-
-menuButton.addEventListener('click', () => {
-  navigation.classList.toggle('open');
-  menuButton.classList.toggle('open');
-});
-
-const links = document.querySelectorAll('.navigation a');
-links.forEach(link => {
-  link.addEventListener('click', () => {
-    navigation.classList.remove('open');
-    menuButton.classList.remove('open');
-  });
-});
-
-
-
 document.addEventListener("DOMContentLoaded", () => {
-  const menuButton = document.getElementById("menu-toggle");
+  const menuButton = document.getElementById("hamburger");
   const navLinks = document.getElementById("nav-links");
 
-
   menuButton.addEventListener("click", () => {
-    navLinks.classList.toggle("hidden");
+    navLinks.classList.toggle("show");
+  });
+
+  // Optional: close menu after clicking any link (on small screens)
+  const links = navLinks.querySelectorAll("a");
+  links.forEach(link => {
+    link.addEventListener("click", () => {
+      navLinks.classList.remove("show");
+    });
   });
 });

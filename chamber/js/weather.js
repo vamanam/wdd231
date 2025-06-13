@@ -1,46 +1,49 @@
-const apiKey = "fb4b9e9375f0b01fa2a02bf7f7af04c1";
-const city = "Uyo";
-const units = "metric";
+const apiKey = 'fb4b9e9375f0b01fa2a02bf7f7af04c1';
+const city = 'Uyo';
+const country = 'NG';
+const units = 'metric';
 
-// URLs
-const currentWeatherURL = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=${units}`;
-const forecastURL = `https://api.openweathermap.org/data/2.5/forecast?q=${city}&appid=${apiKey}&units=${units}`;
+const weatherContainer = document.getElementById('weather-container');
+const currentTemp = document.getElementById('current-temp');
+const weatherDesc = document.getElementById('weather-desc');
+const forecastDiv = document.getElementById('forecast');
 
-// Get current weather
-fetch(currentWeatherURL)
-  .then(response => response.json())
-  .then(data => {
-    document.getElementById("current-temp").textContent = `${data.main.temp.toFixed(1)}°C`;
-    document.getElementById("weather-description").textContent = data.weather[0].description;
-    document.getElementById("humidity").textContent = `Humidity: ${data.main.humidity}%`;
-  })
-  .catch(error => console.error("Error fetching current weather:", error));
+const weatherUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city},${country}&units=${units}&appid=${apiKey}`;
+const forecastUrl = `https://api.openweathermap.org/data/2.5/forecast?q=${city},${country}&units=${units}&appid=${apiKey}`;
 
-// Get 3-day forecast
-fetch(forecastURL)
-  .then(response => response.json())
-  .then(data => {
-    const forecastContainer = document.getElementById("forecast");
-    forecastContainer.innerHTML = ""; // Clear previous forecast
+async function fetchWeather() {
+  try {
+    const response = await fetch(weatherUrl);
+    const data = await response.json();
+    currentTemp.textContent = `Temperature: ${Math.round(data.main.temp)}°C`;
+    weatherDesc.textContent = `Conditions: ${data.weather[0].description}`;
+  } catch (error) {
+    console.error('Error fetching current weather:', error);
+  }
+}
 
-    // Filter forecast to one result per day at 12:00
-    const filteredForecast = data.list.filter(item => item.dt_txt.includes("12:00:00"));
+async function fetchForecast() {
+  try {
+    const response = await fetch(forecastUrl);
+    const data = await response.json();
 
-    filteredForecast.slice(0, 3).forEach(day => {
-      const date = new Date(day.dt_txt);
-      const dayName = date.toLocaleDateString("en-US", { weekday: "short" });
-      const temp = day.main.temp.toFixed(1);
-      const icon = day.weather[0].icon;
-      const desc = day.weather[0].description;
+    const forecastList = data.list.filter(item => item.dt_txt.includes('12:00:00'));
+    forecastDiv.innerHTML = '<h3>3-Day Forecast</h3>';
+    forecastList.slice(0, 3).forEach(item => {
+      const date = new Date(item.dt_txt);
+      const day = date.toLocaleDateString(undefined, { weekday: 'long' });
+      const temp = Math.round(item.main.temp);
+      const desc = item.weather[0].description;
 
-      const card = document.createElement("div");
-      card.classList.add("forecast-card");
-      card.innerHTML = `
-        <h4>${dayName}</h4>
-        <img src="https://openweathermap.org/img/wn/${icon}@2x.png" alt="${desc}" />
-        <p>${temp}°C</p>
-      `;
-      forecastContainer.appendChild(card);
+      const card = document.createElement('div');
+      card.classList.add('forecast-day');
+      card.innerHTML = `<strong>${day}</strong>: ${temp}°C, ${desc}`;
+      forecastDiv.appendChild(card);
     });
-  })
-  .catch(error => console.error("Error fetching forecast:", error));
+  } catch (error) {
+    console.error('Error fetching forecast:', error);
+  }
+}
+
+fetchWeather();
+fetchForecast();

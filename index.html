@@ -18,6 +18,10 @@
   <meta name="twitter:image" content="https://vamanam.github.io/wdd231/images/social-preview.png">
 
   <title>Victoria  A. Anthony | Home</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@500&family=Ubuntu&display=swap" rel="stylesheet">
+    
   <link rel="icon" href="images/favicon.png">
   <link rel="stylesheet" href="styles/large.css"/>
   <link rel="stylesheet" href="styles/normalize.css" />
@@ -27,21 +31,24 @@
   <script src="scripts/navigation.js" defer></script>
 </head>
 <body>
-  <header>
-      <header class="main-header">
-    <img src="images/profile.jpg" alt="Victoria A. Amanam" class="profile-img" />
-    <h1>Victoria A. Amanam</h1>
-  </header>
-  <nav class="main-nav">
-    <button id="menu-toggle" aria-label="Toggle Menu">☰</button>
-    <ul id="nav-links"> 
-      <li><a href="#" class="active">Home</a></li>
-      <li><a href="#">Chamber</a></li>
+<header>
+  <div class="header-container">
+    <img class="profile-img" src="images/profile.jpg" alt="Author Site Profile Picture">
+    <span class="author">Victoria A. Amanam</span>
+    <div class="hamburger" id="hamburger">&#9776;</div>
+  </div>
+
+  <nav id="animatedNavigation">
+    <ul class="nav-links" id="nav-links">
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="chamber/index.html">Chamber</a></li>
       <li><a href="#">Final</a></li>
       <li><a href="https://github.com/vamanam" target="_blank">GitHub Profile</a></li>
       <li><a href="https://linkedin.com/in/victoria-amanam-dev" target="_blank">LinkedIn</a></li>
     </ul>
   </nav>
+</header>
+
   <main>
     <h1>Home</h1>
       <div class="card-container">

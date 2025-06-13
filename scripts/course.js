@@ -86,3 +86,4 @@ const section = document.querySelector('.certificate-section');
 toggleBtn.addEventListener('click', () => {
   section.classList.toggle('dark');
 });
+
