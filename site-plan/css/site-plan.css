@@ -1,0 +1,66 @@
+    @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Quicksand:wght@400;500&display=swap');
+
+    /* Site Plan CSS */
+    :root {
+        --primary-color: #2e4057;
+        /* Navy Blue */
+        --accent-color: #f4a261;
+        /* Warm Orange */
+    }
+
+    body {
+        font-family: 'Quicksand', sans-serif;
+        background-color: #fdfdfd;
+        color: var(--primary-color);
+        margin: 0;
+        padding: 2rem;
+        line-height: 1.6;
+    }
+
+    h1,
+    h2,
+    h3 {
+        font-family: 'Playfair Display', serif;
+        color: var(--accent-color);
+    }
+
+    h1 {
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+
+    section {
+        margin-bottom: 2rem;
+        padding: 1rem;
+        border-left: 5px solid var(--accent-color);
+        background-color: #fff;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.05);
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        margin-top: 1rem;
+    }
+
+    .wireframes {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+
+    @media (min-width: 768px) {
+        .wireframes {
+            flex-direction: row;
+        }
+    }
+
+    footer {
+        text-align: center;
+        margin-top: 2rem;
+        padding: 1rem;
+        background-color: #f4f4f4;
+        border-top: 1px solid #cccccc;
+    }

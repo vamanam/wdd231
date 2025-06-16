@@ -1,0 +1,72 @@
+[
+  {
+    "title": "Timbuktu Cultural Heritage Center",
+    "address": "1 Culture Way, Timbuktu, Nigeria",
+    "cost": "₦500 entry fee",
+    "description": "Explore vibrant exhibits of traditional art, music, and crafts that celebrate local heritage.",
+    "photo_url": "images/timbuktu_heritage_center.webp"
+  },
+  {
+    "title": "River Niger Canoe Experience",
+    "address": "Dockside Lane, Niger Riverfront, Timbuktu",
+    "cost": "₦1,000 per ride",
+    "description": "Take a peaceful paddle or scenic motorboat ride through the Niger River and watch fishermen at work.",
+    "photo_url": "images/niger_canoe_experience.webp"
+  },
+  {
+    "title": "Timbuktu Crafts Market",
+    "address": "Central Market Road, Timbuktu",
+    "cost": "Free entry",
+    "description": "Shop handwoven fabrics, beaded jewelry, and hand-carved sculptures by local artisans.",
+    "photo_url": "images/timbuktu_crafts_market.webp"
+  },
+  {
+    "title": "Sacred Baobab Tree Tour",
+    "address": "Baobab Grove, Heritage District, Timbuktu",
+    "cost": "₦300 guided tour",
+    "description": "Visit the legendary Baobab tree that is been standing for centuries and holds cultural stories.",
+    "photo_url": "images/baobab_tree_tour.webp"
+  },
+  {
+    "title": "Timbuktu Open-Air Food Festival",
+    "address": "Unity Square, Timbuktu",
+    "cost": "₦1,500 all-access tasting",
+    "description": "Sample spicy suya, jollof rice, puff-puff, and zobo in an open square filled with local music.",
+    "photo_url": "images/food_festival_timbuktu.webp"
+  },
+  {
+    "title": "Childrens Story Garden",
+    "address": "Mango Park, Eastside, Timbuktu",
+    "cost": "₦200 per child, adults free",
+    "description": "A colorful park where elders tell folk tales under mango trees. Great for families and schools.",
+    "photo_url": "images/childrens_story_garden.webp"
+  },
+  {
+    "title": "Drum & Dance Nights",
+    "address": "Civic Hall Grounds, Timbuktu",
+    "cost": "₦800 entry, includes refreshment",
+    "description": "Join locals in a weekly celebration of drumming, dancing, and traditional attire.",
+    "photo_url": "images/drum_dance_night.webp"
+  },
+  {
+    "title": "Cultural Dress Photo Booth",
+    "address": "Chamber Courtyard, Timbuktu",
+    "cost": "₦1,000 per session",
+    "description": "Try on native attire and take professional photos to share as souvenirs.",
+    "photo_url": "images/photo_booth_dressup.webp"
+  },
+  {
+    "title": "Timbuktu Museum of History",
+    "address": "3 Museum Lane, Timbuktu",
+    "cost": "₦400 entry fee",
+    "description": "Explore artifacts and learn about the ancient trade routes and local legends.",
+    "photo_url": "images/timbuktu_museum.webp"
+  },
+  {
+    "title": "Wildlife Walk at Kudu Hills",
+    "address": "Kudu Hills Trail, Outskirts of Timbuktu",
+    "cost": "₦700 guided tour",
+    "description": "Take a guided walk through natural terrain and see monkeys, exotic birds, and native flora.",
+    "photo_url": "images/kudu_hills_walk.webp"
+  }
+]

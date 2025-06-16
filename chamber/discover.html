@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Welcome to the Chamber of Commerce - promoting businesses and community engagement." />
+  <meta property="og:title" content="Chamber of Commerce" />
+  <meta property="og:description" content="Connecting business and community." />
+  <meta property="og:image" content="https://vamanam.github.io/wdd231/chamber/images/social-preview.jpg" />
+  <meta property="og:url" content="https://vamanam.github.io/wdd231/chamber/index.html" />
+  
+  <title>Chamber of Commerce | Home</title>
+
+  <link rel="icon" href="images/favicon.png" type="image/x-icon" />
+  <link rel="stylesheet" href="css/normalize.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="css/discover.css" />
+  <script src="js/discover.js" defer></script>
+</head>
+
+<body>
+  <header>
+    <div class="logo">
+      <img src="images/timbuktu-logo.webp" alt="Timbuktu Chamber of Commerce logo" loading="lazy" />
+      <h1>
+        Timbuktu <br />
+        <small>Chamber of Commerce</small>
+      </h1>
+    </div>
+
+<nav>
+  <button id="menu" aria-label="Menu Toggle">
+    <span class="bar"></span>
+    <span class="bar"></span>
+    <span class="bar"></span>
+  </button>
+  <ul class="navigation">
+    <li><a href="index.html" class="active">Home</a></li>
+    <li><a href="discover.html">Discover</a></li>
+    <li><a href="directory.html">Directory</a></li>
+    <li><a href="join.html">Join</a></li>
+  </ul>
+</nav>
+
+  </header>
+
+<main class="discover-layout">
+    <section class="visitor-message" id="visitorMessage"></section>
+    <section class="discover-intro">
+      <h2>Discover Local Businesses</h2>
+      <p>Explore the vibrant businesses in our community. Click on a card to learn more about each business.</p>
+    </section>
+    <section class="discover-gallery" id="card-container">
+      <!-- Cards will be inserted via JavaScript -->
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-top">
+      <div class="footer-logo">
+        <img src="images/timbuktu-logo.webp" alt="Timbuktu Chamber of Commerce logo" loading="lazy" />
+      </div>
+
+      <div class="footer-contact">
+        <h4>Victoria Amanam Chamber of Commerce</h4>
+        <p>No. 23 Chamber Way, Uyo, Akwa Ibom, Nigeria</p>
+        <p>Email: info@uyochamber.org</p>
+        <p>Phone: +234 800 123 4567</p>
+      </div>
+
+      <div class="social-icons">
+        <a href="https://www.facebook.com"><img src="images/facebook-icon.webp" alt="Facebook logo" loading="lazy" /></a>
+        <a href="https://www.twitter.com"><img src="images/twitter-icon.webp" alt="Twitter logo" loading="lazy" /></a>
+        <a href="https://www.linkedin.com"><img src="images/linkedin-icon.webp" alt="LinkedIn logo" loading="lazy" /></a>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; <span id="year"></span> Victoria A. Amanam | WDD 231 | Last Modified: <span id="lastModified"></span></p>
+    </div>
+  </footer>
+
+  <!-- JavaScript for dynamic year and last modified -->
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+    document.getElementById("lastModified").textContent = document.lastModified;
+  </script>
+</body>
+</html>
