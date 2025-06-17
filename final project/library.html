@@ -1,0 +1,70 @@
+<!-- /finalproject/library.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Browse The Rolling Dice Cafe's board game library and cafe menu." />
+  <meta name="author" content="VICTORIA AMANAM" />
+  <meta property="og:title" content="Game Library & Menu - The Rolling Dice Cafe" />
+  <meta property="og:description" content="Browse our collection of board games and enjoy our food and drinks." />
+  <link rel="icon" href="favicon.ico" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <script type="module" src="js/library.js" defer></script>
+  <title>Game Library & Menu | The Rolling Dice Cafe</title>
+</head>
+<body>
+  <header>
+    <h1>The Rolling Dice Cafe</h1>
+    <nav class="navbar">
+        <a class="logo" href="index.html">🎲 Rolling Dice Cafe</a>
+        <button class="hamburger" aria-label="Toggle navigation menu">☰</button>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="library.html"class="active">Library & Menu</a></li>
+          <li><a href="events.html" >Events</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="attributions.html">Attributions</a></li>
+        </ul>
+    </nav>
+    </header>
+
+  <main>
+    <section>
+      <h2>Board Game Library</h2>
+      <label for="genre-filter">Filter by Genre:</label>
+      <select id="genre-filter">
+        <option value="all">All</option>
+        <option value="strategy">Strategy</option>
+        <option value="party">Party</option>
+        <option value="family">Family</option>
+      </select>
+      <div id="game-list"></div>
+    </section>
+
+    <section>
+      <h2>Cafe Menu</h2>
+      <ul>
+        <li><strong>Espresso</strong> - $2.50</li>
+        <li><strong>Herbal Tea</strong> - $2.00</li>
+        <li><strong>Panini Sandwich</strong> - $5.50</li>
+        <li><strong>Homemade Cookies</strong> - $1.50</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 The Rolling Dice Cafe</p>
+    <a href="attributions.html">Attributions</a> |
+    <a href="form-confirmation.html">Contact</a> |
+    <a href="https://your-video-link.com">Demo Video</a>
+  </footer>
+  <!-- Modal Structure (add this before </body>) -->
+  <div id="modal" class="modal" tabindex="-1" aria-modal="true" role="dialog" style="display:none;">
+    <div class="modal-content">
+      <button class="modal-close" aria-label="Close modal">&times;</button>
+      <!-- Modal content will be injected here by JS -->
+    </div>
+  </div>
+</body>
+</html>

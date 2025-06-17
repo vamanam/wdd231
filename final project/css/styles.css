@@ -1,0 +1,319 @@
+/* Color Variables */
+:root {
+  --primary: #6c4f3d;
+  --accent: #e6cba8;
+  --bg: #fffaf5;
+  --text: #222;
+  --white: #fff;
+  --nav-link: #fff;
+  --nav-link-hover: #e6cba8;
+  --footer-bg: #6c4f3d;
+  --footer-link: #e6cba8;
+  --error: #b00020;
+}
+
+/* Base Reset and Typography */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  background-color: var(--bg);
+  color: var(--text);
+}
+
+/* Header and Nav */
+header {
+  background-color: var(--primary);
+  color: var(--white);
+  padding: 1rem 0;
+}
+
+header h1 {
+  margin-bottom: 0.5rem;
+  text-align: center;
+  font-size: 2rem;
+  letter-spacing: 1px;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+nav .logo {
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: var(--accent);
+  margin-right: 2rem;
+  text-decoration: none;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li a {
+  color: var(--nav-link);
+  text-decoration: none;
+  font-size: 1rem;
+  transition: color 0.2s;
+}
+
+nav ul li a.active,
+nav ul li a:focus,
+nav ul li a:hover {
+  color: var(--nav-link-hover);
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+.hamburger,
+#menu-toggle,
+#menu-btn {
+  background: none;
+  border: none;
+  color: var(--nav-link);
+  font-size: 1.8rem;
+  cursor: pointer;
+  display: none;
+}
+
+/* Responsive Nav */
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  nav ul {
+    flex-direction: column;
+    width: 100%;
+    display: none;
+    gap: 0;
+  }
+  nav ul.open {
+    display: flex;
+  }
+  .hamburger,
+  #menu-toggle,
+  #menu-btn {
+    display: block;
+    margin-bottom: 0.5rem;
+  }
+  nav ul li {
+    padding: 0.5rem 0;
+  }
+}
+
+/* Main Layout */
+main {
+  max-width: 960px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+/* Hero Section */
+.hero {
+  position: relative;
+  text-align: center;
+  color: var(--white);
+}
+
+.hero img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  max-height: 400px;
+}
+
+.hero-text {
+  position: absolute;
+  bottom: 20px;
+  left: 10%;
+  right: 10%;
+  background: rgba(0, 0, 0, 0.6);
+  padding: 1rem;
+  border-radius: 10px;
+}
+
+/* Highlights & Upcoming */
+.highlights, .upcoming {
+  padding: 2rem 1rem;
+  text-align: center;
+}
+
+/* Button */
+.button, .cta-btn {
+  background-color: var(--accent);
+  color: var(--primary);
+  padding: 0.5rem 1rem;
+  border: none;
+  text-decoration: none;
+  border-radius: 10px;
+  margin-top: 1rem;
+  display: inline-block;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.button:hover, .cta-btn:hover {
+  background-color: var(--primary);
+  color: var(--accent);
+}
+
+/* Game/Event Cards */
+.game-card, .event-card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  margin: 1rem;
+  padding: 1rem;
+  text-align: center;
+  background: var(--white);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+}
+
+.game-card img, .event-card img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 4px;
+}
+
+/* Cards Grid */
+.events-grid, .games-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+
+@media (min-width: 600px) {
+  .events-grid, .games-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (min-width: 900px) {
+  .events-grid, .games-grid {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+/* Modal Style */
+#modal, #gameModal {
+  display: none;
+  position: fixed;
+  top: 0; left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0,0,0,0.75);
+  z-index: 1000;
+  justify-content: center;
+  align-items: center;
+}
+
+#modal.open, #gameModal.open {
+  display: flex;
+}
+
+.modal-content {
+  background: var(--white);
+  padding: 2rem;
+  border-radius: 8px;
+  position: relative;
+  max-width: 600px;
+  margin: auto;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.2);
+}
+
+.modal-close, .close {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  cursor: pointer;
+  font-size: 1.5rem;
+  background: none;
+  border: none;
+  color: var(--primary);
+}
+
+/* Forms */
+form {
+  background: #f4f4f4;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  margin-bottom: 2rem;
+}
+
+form label {
+  display: block;
+  margin-top: 1rem;
+  font-weight: bold;
+}
+
+form input, form textarea {
+  width: 100%;
+  padding: 0.75rem;
+  margin-top: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+form button {
+  margin-top: 1rem;
+  background-color: var(--primary);
+  color: var(--white);
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+form button:hover {
+  background-color: var(--accent);
+  color: var(--primary);
+}
+
+/* Error Message */
+.error {
+  color: var(--error);
+  font-weight: bold;
+  margin: 1rem 0;
+}
+
+/* Footer */
+footer {
+  background-color: var(--footer-bg);
+  color: var(--white);
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.95rem;
+  margin-top: 2rem;
+}
+
+footer a {
+  color: var(--footer-link);
+  text-decoration: underline;
+}
+
+footer a:hover {
+  color: var(--accent);
+}
+
+/* Utility */
+.no-scroll {
+  overflow: hidden;
+}

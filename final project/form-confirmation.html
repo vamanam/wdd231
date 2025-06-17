@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Confirmation page for contact form submissions at The Rolling Dice Cafe.">
+  <title>Form Confirmation | The Rolling Dice Cafe</title>
+  <link rel="icon" href="favicon.ico">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header>
+    <h1>The Rolling Dice Cafe</h1>
+    <nav>
+      <ul id="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="library.html">Library/Menu</a></li>
+        <li><a href="events.html">Events</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <h2>Thank You for Your Submission!</h2>
+    <p id="confirmation"></p>
+  </main>
+  <footer>
+    <p>&copy; 2025 The Rolling Dice Cafe</p>
+  </footer>
+  <script>
+    const params = new URLSearchParams(window.location.search);
+    const name = params.get('name');
+    const email = params.get('email');
+    const message = params.get('message');
+    document.getElementById('confirmation').textContent =
+      name && email && message
+        ? `Thanks, ${name}! We received your message: "${message}". We will respond to ${email} soon.`
+        : "We received your submission. Thank you!";
+  </script>
+</body>
+</html>

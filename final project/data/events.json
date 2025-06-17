@@ -1,0 +1,47 @@
+[
+  {
+    "id": 1,
+    "name": "Open Game Night",
+    "date": "2025-06-18",
+    "time": "6:00 PM",
+    "description": "Come enjoy a relaxed evening of gaming! All skill levels welcome.",
+    "type": "casual",
+    "entryFee": "Free"
+  },
+  {
+    "id": 2,
+    "name": "Settlers of Catan Tournament",
+    "date": "2025-06-20",
+    "time": "4:00 PM",
+    "description": "Compete in our popular Catan tournament! Prizes for top 3 players.",
+    "type": "tournament",
+    "entryFee": "$5"
+  },
+  {
+    "id": 3,
+    "name": "Learn to Play: Dungeons & Dragons",
+    "date": "2025-06-22",
+    "time": "3:00 PM",
+    "description": "New to D&D? Join our beginner-friendly session with expert Dungeon Masters.",
+    "type": "learning",
+    "entryFee": "Free"
+  },
+  {
+    "id": 4,
+    "name": "Board Game Brunch",
+    "date": "2025-06-23",
+    "time": "11:00 AM",
+    "description": "Enjoy coffee, light brunch, and relaxed gaming with friends.",
+    "type": "casual",
+    "entryFee": "$3"
+  },
+  {
+    "id": 5,
+    "name": "Chess Showdown",
+    "date": "2025-06-25",
+    "time": "5:00 PM",
+    "description": "Challenge our cafes best! Win a drink voucher if you beat our champ.",
+    "type": "tournament",
+    "entryFee": "$2"
+  }
+]

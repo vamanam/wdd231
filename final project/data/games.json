@@ -1,0 +1,122 @@
+[
+  {
+    "title": "Catan",
+    "genre": "Strategy",
+    "players": "3-4",
+    "description": "Trade, build, and settle the island of Catan.",
+    "image": "images/catan.webp",
+    "rules": "https://www.catan.com/en/download/?SoC_5th_Rules_150909.pdf"
+  },
+  {
+    "title": "Ticket to Ride",
+    "genre": "Family",
+    "players": "2-5",
+    "description": "Build train routes across North America.",
+    "image": "images/ticket-to-ride.webp",
+    "rules": "https://s3-us-west-1.amazonaws.com/media.days-of-wonder.com/tickettoride/en/T2R-US-Rules.pdf"
+  },
+  {
+    "title": "Carcassonne",
+    "genre": "Tile-Placement",
+    "players": "2-5",
+    "description": "Build a medieval landscape one tile at a time.",
+    "image": "images/carcassonne.webp",
+    "rules": "https://www.zmangames.com/en/products/carcassonne/"
+  },
+  {
+    "title": "Pandemic",
+    "genre": "Cooperative",
+    "players": "2-4",
+    "description": "Work together to stop global outbreaks.",
+    "image": "images/pandemic.webp",
+    "rules": "https://zmangames.com/en/news/2018/10/17/pandemic-rules-download/"
+  },
+  {
+    "title": "Azul",
+    "genre": "Abstract",
+    "players": "2-4",
+    "description": "Decorate the royal palace of Evora.",
+    "image": "images/azul.webp",
+    "rules": "https://www.nextmovegames.com/en/games/azul"
+  },
+  {
+    "title": "Splendor",
+    "genre": "Strategy",
+    "players": "2-4",
+    "description": "Acquire gems and develop your wealth.",
+    "image": "images/splendor.webp",
+    "rules": "https://www.spacecowboys.fr/splendor"
+  },
+  {
+    "title": "Dixit",
+    "genre": "Party",
+    "players": "3-6",
+    "description": "A storytelling game of imagination and clues.",
+    "image": "images/dixit.webp",
+    "rules": "https://www.libellud.com/games/dixit/"
+  },
+  {
+    "title": "Codenames",
+    "genre": "Party",
+    "players": "2-8",
+    "description": "Give one-word clues to find your agents.",
+    "image": "images/codenames.webp",
+    "rules": "https://czechgames.com/files/rules/codenames-rules-en.pdf"
+  },
+  {
+    "title": "7 Wonders",
+    "genre": "Card Drafting",
+    "players": "2-7",
+    "description": "Lead your civilization through three ages.",
+    "image": "images/7wonders.webp",
+    "rules": "https://rprod-assets.s3.amazonaws.com/media/rulebooks/7wonders_rulebook.pdf"
+  },
+  {
+    "title": "The Crew",
+    "genre": "Cooperative",
+    "players": "2-5",
+    "description": "Complete space missions in a trick-taking game.",
+    "image": "images/the-crew.webp",
+    "rules": "https://www.thamesandkosmos.com/index.php/product/category/games/the-crew"
+  },
+  {
+    "title": "Patchwork",
+    "genre": "Abstract",
+    "players": "2",
+    "description": "Compete to build the most aesthetic quilt.",
+    "image": "images/patchwork.webp",
+    "rules": "https://lookout-spiele.de/en/games/patchwork.html"
+  },
+  {
+    "title": "King of Tokyo",
+    "genre": "Dice",
+    "players": "2-6",
+    "description": "Battle as giant monsters in Tokyo.",
+    "image": "images/king-of-tokyo.webp",
+    "rules": "https://iello.fr/regles/King_of_Tokyo_rulebook.pdf"
+  },
+  {
+    "title": "Wingspan",
+    "genre": "Engine-Building",
+    "players": "1-5",
+    "description": "Attract birds and build wildlife preserves.",
+    "image": "images/wingspan.webp",
+    "rules": "https://stonemaiergames.com/wp-content/uploads/2019/03/Wingspan-Rules.pdf"
+  },
+  {
+    "title": "Terraforming Mars",
+    "genre": "Strategy",
+    "players": "1-5",
+    "description": "Develop corporations and terraform the red planet.",
+    "image": "images/terraforming-mars.webp",
+    "rules": "https://strongholdgames.com/wp-content/uploads/2017/01/TM-Rules.pdf"
+  },
+  {
+    "title": "Uno",
+    "genre": "Family",
+    "players": "2-10",
+    "description": "Match colors and numbers in this classic game.",
+    "image": "images/uno.webp",
+    "rules": "https://service.mattel.com/instruction_sheets/42001pr.pdf"
+  }
+]
